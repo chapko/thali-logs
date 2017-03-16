@@ -1,0 +1,185 @@
+[....] Waiting for iOS device to be connected
+Handling device type: 1
+Already found device? 0
+Device Name: iPhone
+Model Name: iPhone 6s
+[....] Using iPhone 6s 'iPhone' (5b24d94b583b75641f992f4a79f083c7bbde8ae3).
+Device Name: iPhone
+Model Name: iPhone 6s
+------ Debug phase ------
+Starting debug of iPhone 6s 'iPhone' (5b24d94b583b75641f992f4a79f083c7bbde8ae3) connected through USB...
+Device Class: iPhone
+build: 13G36
+version: 9.3.5
+version: 9.3
+Device Class: iPhone
+build: 13G36
+version: 9.3.5
+version: 9.3
+Device support path: /Applications/Xcode-7.3.1/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/DeviceSupport/9.3 (13E230)
+Developer disk image: /Applications/Xcode-7.3.1/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/DeviceSupport/9.3 (13E230)/DeveloperDiskImage.dmg
+[  0%] Looking up developer disk image
+[ 95%] Developer disk image mounted successfully
+Device Class: iPhone
+build: 13G36
+version: 9.3.5
+version: 9.3
+[100%] Connecting to remote debug server
+-------------------------
+Handling device type: 1
+Already found device? 1
+Device Name: Rockwell iPhone
+Model Name: iPhone 6 (GSM)
+Skipping iPhone 6 (GSM) 'Rockwell iPhone' (250dde94e0f57540e041b9de5f548198d6292ec0).
+(lldb) command source -s 0 '/tmp/21597DE8-39D0-4E49-A229-E60A297BBF68/fruitstrap-lldb-prep-cmds-5b24d94b583b75641f992f4a79f083c7bbde8ae3'
+Executing commands in '/tmp/21597DE8-39D0-4E49-A229-E60A297BBF68/fruitstrap-lldb-prep-cmds-5b24d94b583b75641f992f4a79f083c7bbde8ae3'.
+(lldb)     platform select remote-ios --sysroot '/Applications/Xcode-7.3.1/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/DeviceSupport/9.3 (13E230)/Symbols'
+  Platform: remote-ios
+ Connected: no
+  SDK Path: "/Applications/Xcode-7.3.1/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/DeviceSupport/9.3 (13E230)/Symbols"
+(lldb)     target create "/Users/eugene.chapko/Workspace/ThaliTest/platforms/ios/build/device/ThaliTest.app"
+Current executable set to '/Users/eugene.chapko/Workspace/ThaliTest/platforms/ios/build/device/ThaliTest.app' (armv7).
+(lldb)     script fruitstrap_device_app="/private/var/containers/Bundle/Application/53C175A5-8A73-45EB-9130-BDB892E6BAF7/ThaliTest.app"
+(lldb)     script fruitstrap_connect_url="connect://127.0.0.1:58513"
+(lldb)     command script import "/tmp/21597DE8-39D0-4E49-A229-E60A297BBF68/fruitstrap_5b24d94b583b75641f992f4a79f083c7bbde8ae3.py"
+(lldb)     command script add -f fruitstrap_5b24d94b583b75641f992f4a79f083c7bbde8ae3.connect_command connect
+(lldb)     command script add -s asynchronous -f fruitstrap_5b24d94b583b75641f992f4a79f083c7bbde8ae3.run_command run
+(lldb)     command script add -s asynchronous -f fruitstrap_5b24d94b583b75641f992f4a79f083c7bbde8ae3.autoexit_command autoexit
+(lldb)     command script add -s asynchronous -f fruitstrap_5b24d94b583b75641f992f4a79f083c7bbde8ae3.safequit_command safequit
+(lldb)     connect
+(lldb)     run
+success
+(lldb)     autoexit
+2017-03-16 20:31:44.808 ThaliTest[310:52697] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///private/var/mobile/Containers/Data/Application/112847E9-AD8D-4845-A093-07B11653615D/Library/Cookies/Cookies.binarycookies
+2017-03-16 20:31:45.030 ThaliTest[310:52697] Apache Cordova native platform version 4.3.1 is starting.
+2017-03-16 20:31:45.031 ThaliTest[310:52697] Multi-tasking -> Device: YES, App: YES
+2017-03-16 20:31:45.044 ThaliTest[310:52697] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2017-03-16 20:31:45.382 ThaliTest[310:52697] Using UIWebView
+2017-03-16 20:31:45.387 ThaliTest[310:52697] [CDVTimer][handleopenurl] 0.343978ms
+2017-03-16 20:31:45.394 ThaliTest[310:52697] [CDVTimer][intentandnavigationfilter] 7.162035ms
+2017-03-16 20:31:45.395 ThaliTest[310:52697] [CDVTimer][gesturehandler] 0.324965ms
+2017-03-16 20:31:45.395 ThaliTest[310:52697] [CDVTimer][TotalPluginStartup] 9.255052ms
+2017-03-16 20:31:49.679 ThaliTest[310:52697] Resetting plugins due to page load.
+2017-03-16 20:31:50.031 ThaliTest[310:52697] Finished load of: file:///var/containers/Bundle/Application/53C175A5-8A73-45EB-9130-BDB892E6BAF7/ThaliTest.app/www/index.html
+2017-03-16 20:31:50.078 ThaliTest[310:52697] JXcore Cordova plugin initializing
+2017-03-16 20:31:50.080 ThaliTest[310:52821] JXcore instance initializing
+Initializing JXcore engine
+JXcore engine is ready
+Starting JXcore engine
+Platform ios
+Process ARCH arm
+JXcore Cordova bridge is ready!
+JXcore engine is started
+2017-03-16 17:31:57 - DEBUG thaliMobileNativeWrapper: 'Method peerAvailabilityChanged registered to native'
+2017-03-16 17:31:57 - DEBUG thaliMobileNativeWrapper: 'Method discoveryAdvertisingStateUpdateNonTCP registered to native'
+2017-03-16 17:31:57 - DEBUG thaliMobileNativeWrapper: 'Method multiConnectResolved registered to native'
+2017-03-16 17:31:57 - DEBUG thaliMobileNativeWrapper: 'networkChanged: {"cellular":"doNotCare","bssid":"70:cd:60:ff:5a:7","wifi":"on","bluetoothLowEnergy":"on","bluetooth":"on","ssid":"🐢"}'
+2017-03-16 17:31:57 - DEBUG thaliMobileNativeWrapper: 'Method networkChanged registered to native'
+2017-03-16 17:31:57 - DEBUG thaliMobileNativeWrapper: 'Method multiConnectConnectionFailure registered to native'
+2017-03-16 17:31:57 - DEBUG thaliMobileNativeWrapper: 'Method incomingConnectionToPortNumberFailed registered to native'
+2017-03-16 17:31:57 - DEBUG UnitTest_app: 'My device name is: 'Apple-iPhone''
+2017-03-16 17:31:57 - WARN testUtils: 'myNameCallback not set!'
+2017-03-16 17:31:58 - INFO runTests: 'Starting tests. Network type: NATIVE. Platform: ios'
+2017-03-16 17:31:58 - INFO testLoader: 'loading file: /private/var/containers/Bundle/Application/53C175A5-8A73-45EB-9130-BDB892E6BAF7/ThaliTest.app/www/jxcore/bv_tests/testThaliMobileNative.js'
+2017-03-16 17:31:58 - DEBUG UnitTest_app: 'Unit Test app is loaded'
+2017-03-16 17:31:59 - INFO CoordinatedClient: 'Connecting to coordination server on http://192.168.2.1:3000/'
+2017-03-16 17:31:59 - DEBUG CoordinatedClient: 'connected to the test server'
+2017-03-16 17:32:13 - DEBUG CoordinatedClient: 'device disconnected from the test server'
+2017-03-16 17:32:14 - WARN CoordinatedClient: 'connect_error error ignored for reconnect: 'Error: websocket error', description: 'Error: connect ECONNREFUSED', stack: 'Transport.prototype.onError@/private/var/containers/Bundle/Application/53C175A5-8A73-45EB-9130-BDB892E6BAF7/ThaliTest.app/www/jxcore/node_modules/engine.io-client/lib/transport.js:62:13
+WS.prototype.addEventListeners/this.ws.onerror@/private/var/containers/Bundle/Application/53C175A5-8A73-45EB-9130-BDB892E6BAF7/ThaliTest.app/www/jxcore/node_modules/engine.io-client/lib/transports/websocket.js:135:5
+onError@/private/var/containers/Bundle/Application/53C175A5-8A73-45EB-9130-BDB892E6BAF7/ThaliTest.app/www/jxcore/node_modules/ws/lib/WebSocket.js:428:5
+emit@events.js:82:1
+onerror@/private/var/containers/Bundle/Application/53C175A5-8A73-45EB-9130-BDB892E6BAF7/ThaliTest.app/www/jxcore/node_modules/ws/lib/WebSocket.js:686:5
+emit@events.js:82:1''
+2017-03-16 17:32:14 - WARN CoordinatedClient: 'reconnect_error error ignored for reconnect: 'Error: websocket error', description: 'Error: connect ECONNREFUSED', stack: 'Transport.prototype.onError@/private/var/containers/Bundle/Application/53C175A5-8A73-45EB-9130-BDB892E6BAF7/ThaliTest.app/www/jxcore/node_modules/engine.io-client/lib/transport.js:62:13
+WS.prototype.addEventListeners/this.ws.onerror@/private/var/containers/Bundle/Application/53C175A5-8A73-45EB-9130-BDB892E6BAF7/ThaliTest.app/www/jxcore/node_modules/engine.io-client/lib/transports/websocket.js:135:5
+onError@/private/var/containers/Bundle/Application/53C175A5-8A73-45EB-9130-BDB892E6BAF7/ThaliTest.app/www/jxcore/node_modules/ws/lib/WebSocket.js:428:5
+emit@events.js:82:1
+onerror@/private/var/containers/Bundle/Application/53C175A5-8A73-45EB-9130-BDB892E6BAF7/ThaliTest.app/www/jxcore/node_modules/ws/lib/WebSocket.js:686:5
+emit@events.js:82:1''
+2017-03-16 17:32:20 - DEBUG CoordinatedClient: 'reconnected to the test server'
+2017-03-16 17:32:20 - DEBUG CoordinatedClient: 'connected to the test server'
+TAP version 13
+# setup
+# Can shift data
+2017-03-16 17:32:30 - DEBUG thaliMobileNativeWrapper: 'discoveryAdvertisingStateUpdateNonTCP: {"discoveryActive":false,"advertisingActive":true}'
+2017-03-16 17:32:30 - INFO thaliMobile: 'Received state ({"discoveryActive":false,"advertisingActive":true}) did not match with target ({"started":false,"listening":false,"advertising":false,"networkType":"BOTH","startArguments":{"router":null,"pskIdToSecret":null,"networkType":null}})'
+2017-03-16 17:32:30 - INFO thaliMobile: 'Filtered out discoveryAdvertisingStateUpdate (was in stopped state).'
+2017-03-16 17:32:30 - DEBUG thaliMobileNativeWrapper: 'discoveryAdvertisingStateUpdateNonTCP: {"discoveryActive":true,"advertisingActive":true}'
+2017-03-16 17:32:30 - INFO thaliMobile: 'Received state ({"discoveryActive":true,"advertisingActive":true}) did not match with target ({"started":false,"listening":false,"advertising":false,"networkType":"BOTH","startArguments":{"router":null,"pskIdToSecret":null,"networkType":null}})'
+2017-03-16 17:32:30 - INFO thaliMobile: 'Filtered out discoveryAdvertisingStateUpdate (was in stopped state).'
+2017-03-16 17:32:31 - DEBUG thaliMobileNativeTestUtils: 'Issuing multiConnect for F1826CF4-F624-43E7-9F0B-B70403244442 (syncValue: T8mcLp2BumLdOTIUjLubZpmhiBlUUVDN)'
+2017-03-16 17:32:31 - DEBUG thaliMobileNativeTestUtils: 'Got 'multiConnect' callback'
+2017-03-16 17:32:33 - DEBUG thaliMobileNativeWrapper: 'multiConnectResolved: {"syncValue":"T8mcLp2BumLdOTIUjLubZpmhiBlUUVDN","error":null,"portNumber":50231}'
+2017-03-16 17:32:33 - DEBUG thaliMobileNativeTestUtils: 'Got multiConnectResolved -syncValue: 'T8mcLp2BumLdOTIUjLubZpmhiBlUUVDN', error: 'null', listeningPort: '50231''
+Native connection established. Peer: { peerIdentifier: 'F1826CF4-F624-43E7-9F0B-B70403244442',
+  peerAvailable: true,
+  generation: 0 }
+Connecting to the 50231 port on localhost
+Connected to the 50231 port on localhost
+Client sends data (20 bytes): <small amount of data>
+Client data flushed
+ok 1 got the same data back
+# teardown
+Server received (20 bytes): <small amount of data>
+Server received all data: <small amount of data>
+Server sends data back to client (20 bytes): <small amount of data>
+Server data flushed
+Server's socket stream finished
+2017-03-16 17:32:35 - DEBUG makeIntoCloseAllServer: 'closeAll called on server'
+2017-03-16 17:32:35 - DEBUG thaliMobileNativeWrapper: 'discoveryAdvertisingStateUpdateNonTCP: {"discoveryActive":false,"advertisingActive":true}'
+2017-03-16 17:32:35 - INFO thaliMobile: 'Received state ({"discoveryActive":false,"advertisingActive":true}) did not match with target ({"started":false,"listening":false,"advertising":false,"networkType":"BOTH","startArguments":{"router":null,"pskIdToSecret":null,"networkType":null}})'
+2017-03-16 17:32:35 - INFO thaliMobile: 'Filtered out discoveryAdvertisingStateUpdate (was in stopped state).'
+ok 2 Should be able to call stopListeningForAdvertisements in teardown
+2017-03-16 17:32:35 - DEBUG thaliMobileNativeWrapper: 'discoveryAdvertisingStateUpdateNonTCP: {"discoveryActive":false,"advertisingActive":false}'
+2017-03-16 17:32:35 - INFO thaliMobile: 'Filtered out discoveryAdvertisingStateUpdate (was in stopped state).'
+ok 3 Should be able to call stopAdvertisingAndListening in teardown
+2017-03-16 17:32:35 - DEBUG thaliMobileNativeWrapper: 'Method peerAvailabilityChanged registered to native'
+2017-03-16 17:32:35 - DEBUG thaliMobileNativeWrapper: 'Method discoveryAdvertisingStateUpdateNonTCP registered to native'
+2017-03-16 17:32:35 - DEBUG thaliMobileNativeWrapper: 'Method multiConnectResolved registered to native'
+2017-03-16 17:32:35 - DEBUG thaliMobileNativeWrapper: 'networkChanged: {"cellular":"doNotCare","bssid":"70:cd:60:ff:5a:7","wifi":"on","bluetoothLowEnergy":"on","bluetooth":"on","ssid":"🐢"}'
+2017-03-16 17:32:35 - INFO thaliMobile: 'Filtered out networkChangedNonTCP (was in stopped state).'
+2017-03-16 17:32:35 - DEBUG thaliMobileNativeWrapper: 'Method networkChanged registered to native'
+2017-03-16 17:32:35 - DEBUG thaliMobileNativeWrapper: 'Method multiConnectConnectionFailure registered to native'
+2017-03-16 17:32:35 - DEBUG thaliMobileNativeWrapper: 'Method incomingConnectionToPortNumberFailed registered to native'
+# setup
+# Can shift data securely
+2017-03-16 17:32:36 - DEBUG thaliMobileNativeWrapper: 'discoveryAdvertisingStateUpdateNonTCP: {"discoveryActive":false,"advertisingActive":true}'
+2017-03-16 17:32:36 - INFO thaliMobile: 'Received state ({"discoveryActive":false,"advertisingActive":true}) did not match with target ({"started":false,"listening":false,"advertising":false,"networkType":"BOTH","startArguments":{"router":null,"pskIdToSecret":null,"networkType":null}})'
+2017-03-16 17:32:36 - INFO thaliMobile: 'Filtered out discoveryAdvertisingStateUpdate (was in stopped state).'
+2017-03-16 17:32:36 - DEBUG thaliMobileNativeWrapper: 'discoveryAdvertisingStateUpdateNonTCP: {"discoveryActive":true,"advertisingActive":true}'
+2017-03-16 17:32:36 - INFO thaliMobile: 'Received state ({"discoveryActive":true,"advertisingActive":true}) did not match with target ({"started":false,"listening":false,"advertising":false,"networkType":"BOTH","startArguments":{"router":null,"pskIdToSecret":null,"networkType":null}})'
+2017-03-16 17:32:36 - INFO thaliMobile: 'Filtered out discoveryAdvertisingStateUpdate (was in stopped state).'
+2017-03-16 17:32:36 - DEBUG thaliMobileNativeTestUtils: 'Issuing multiConnect for F1826CF4-F624-43E7-9F0B-B70403244442 (syncValue: LuMOCIyHUwrw7xfrKPUZDxFrYrttJ3Nj)'
+2017-03-16 17:32:36 - DEBUG thaliMobileNativeTestUtils: 'Got 'multiConnect' callback'
+2017-03-16 17:32:36 - DEBUG thaliMobileNativeWrapper: 'multiConnectResolved: {"syncValue":"LuMOCIyHUwrw7xfrKPUZDxFrYrttJ3Nj","error":null,"portNumber":50231}'
+2017-03-16 17:32:36 - DEBUG thaliMobileNativeTestUtils: 'Got multiConnectResolved -syncValue: 'LuMOCIyHUwrw7xfrKPUZDxFrYrttJ3Nj', error: 'null', listeningPort: '50231''
+Native connection established. Peer: { peerIdentifier: 'F1826CF4-F624-43E7-9F0B-B70403244442',
+  peerAvailable: true,
+  generation: 0 }
+Connecting to the 50231 port on localhost
+TLS socket sends 116 bytes
+2017-03-16 17:35:36 - DEBUG CoordinatedClient: 'all tests completed'
+2017-03-16 17:35:36 - DEBUG CoordinatedClient: 'test client disconnected'
+2017-03-16 17:35:36 - DEBUG CoordinatedClient: 'test client failed'
+2017-03-16 17:35:36 - ERROR CoordinatedThaliTape: 'tests failed, error: 'Error: TimeoutError: timeout exceeded, event: 'run_Can shift data securely_finished', test: 'Can shift data securely'', stack: 'CoordinatedClient.prototype._customError@/private/var/containers/Bundle/Application/53C175A5-8A73-45EB-9130-BDB892E6BAF7/ThaliTest.app/www/jxcore/lib/CoordinatedClient.js:291:27
+Emitter.prototype.emit@/private/var/containers/Bundle/Application/53C175A5-8A73-45EB-9130-BDB892E6BAF7/ThaliTest.app/www/jxcore/node_modules/component-emitter/index.js:131:7
+Socket.prototype.onevent@/private/var/containers/Bundle/Application/53C175A5-8A73-45EB-9130-BDB892E6BAF7/ThaliTest.app/www/jxcore/node_modules/socket.io-client/lib/socket.js:263:5
+Socket.prototype.onpacket@/private/var/containers/Bundle/Application/53C175A5-8A73-45EB-9130-BDB892E6BAF7/ThaliTest.app/www/jxcore/node_modules/socket.io-client/lib/socket.js:221:7
+module.exports/<@/private/var/containers/Bundle/Application/53C175A5-8A73-45EB-9130-BDB892E6BAF7/ThaliTest.app/www/jxcore/node_modules/component-bind/index.js:21:12
+Emitter.prototype.emit@/private/var/containers/Bundle/Application/53C175A5-8A73-45EB-9130-BDB892E6BAF7/ThaliTest.app/www/jxcore/node_modules/component-emitter/index.js:131:7''
+2017-03-16 17:35:36 - DEBUG CoordinatedThaliTape: '****TEST_LOGGER:[PROCESS_ON_EXIT_FAILED]****'
+2017-03-16 17:35:36 - ERROR runTests: 'TimeoutError: timeout exceeded, event: 'run_Can shift data securely_finished', test: 'Can shift data securely'
+CoordinatedClient.prototype._customError@/private/var/containers/Bundle/Application/53C175A5-8A73-45EB-9130-BDB892E6BAF7/ThaliTest.app/www/jxcore/lib/CoordinatedClient.js:291:27
+Emitter.prototype.emit@/private/var/containers/Bundle/Application/53C175A5-8A73-45EB-9130-BDB892E6BAF7/ThaliTest.app/www/jxcore/node_modules/component-emitter/index.js:131:7
+Socket.prototype.onevent@/private/var/containers/Bundle/Application/53C175A5-8A73-45EB-9130-BDB892E6BAF7/ThaliTest.app/www/jxcore/node_modules/socket.io-client/lib/socket.js:263:5
+Socket.prototype.onpacket@/private/var/containers/Bundle/Application/53C175A5-8A73-45EB-9130-BDB892E6BAF7/ThaliTest.app/www/jxcore/node_modules/socket.io-client/lib/socket.js:221:7
+module.exports/<@/private/var/containers/Bundle/Application/53C175A5-8A73-45EB-9130-BDB892E6BAF7/ThaliTest.app/www/jxcore/node_modules/component-bind/index.js:21:12
+Emitter.prototype.emit@/private/var/containers/Bundle/Application/53C175A5-8A73-45EB-9130-BDB892E6BAF7/ThaliTest.app/www/jxcore/node_modules/component-emitter/index.js:131:7'
