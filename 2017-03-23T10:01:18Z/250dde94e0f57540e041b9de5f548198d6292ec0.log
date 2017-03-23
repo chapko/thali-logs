@@ -1,0 +1,514 @@
+[....] Waiting for iOS device to be connected
+Handling device type: 1
+Already found device? 0
+Device Name: Rockwell iPhone
+Model Name: iPhone 6 (GSM)
+[....] Using iPhone 6 (GSM) 'Rockwell iPhone' (250dde94e0f57540e041b9de5f548198d6292ec0).
+Device Name: Rockwell iPhone
+Model Name: iPhone 6 (GSM)
+------ Debug phase ------
+Starting debug of iPhone 6 (GSM) 'Rockwell iPhone' (250dde94e0f57540e041b9de5f548198d6292ec0) connected through USB...
+Device Class: iPhone
+build: 14C92
+version: 10.2
+Device Class: iPhone
+build: 14C92
+version: 10.2
+Device support path: /Applications/Xcode-7.3.1/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/DeviceSupport/10.2 (14C89)
+Developer disk image: /Applications/Xcode-7.3.1/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/DeviceSupport/10.2 (14C89)/DeveloperDiskImage.dmg
+[  0%] Looking up developer disk image
+[ 95%] Developer disk image mounted successfully
+Device Class: iPhone
+build: 14C92
+version: 10.2
+[100%] Connecting to remote debug server
+-------------------------
+Handling device type: 1
+Already found device? 1
+Device Name: iPhone
+Model Name: iPhone 6s
+Skipping iPhone 6s 'iPhone' (5b24d94b583b75641f992f4a79f083c7bbde8ae3).
+(lldb) command source -s 0 '/tmp/DBB487CE-AEBB-439D-81E3-B2FF02CCC231/fruitstrap-lldb-prep-cmds-250dde94e0f57540e041b9de5f548198d6292ec0'
+Executing commands in '/tmp/DBB487CE-AEBB-439D-81E3-B2FF02CCC231/fruitstrap-lldb-prep-cmds-250dde94e0f57540e041b9de5f548198d6292ec0'.
+(lldb)     platform select remote-ios --sysroot '/Applications/Xcode-7.3.1/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/DeviceSupport/10.2 (14C89)/Symbols'
+  Platform: remote-ios
+ Connected: no
+  SDK Path: "/Applications/Xcode-7.3.1/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/DeviceSupport/10.2 (14C89)/Symbols"
+(lldb)     target create "/Users/eugene.chapko/Workspace/ThaliTest/platforms/ios/build/device/ThaliTest.app"
+Current executable set to '/Users/eugene.chapko/Workspace/ThaliTest/platforms/ios/build/device/ThaliTest.app' (armv7).
+(lldb)     script fruitstrap_device_app="/private/var/containers/Bundle/Application/69D99F8C-5291-4A99-8A5C-CBB2DB1037C1/ThaliTest.app"
+(lldb)     script fruitstrap_connect_url="connect://127.0.0.1:63252"
+(lldb)     command script import "/tmp/DBB487CE-AEBB-439D-81E3-B2FF02CCC231/fruitstrap_250dde94e0f57540e041b9de5f548198d6292ec0.py"
+(lldb)     command script add -f fruitstrap_250dde94e0f57540e041b9de5f548198d6292ec0.connect_command connect
+(lldb)     command script add -s asynchronous -f fruitstrap_250dde94e0f57540e041b9de5f548198d6292ec0.run_command run
+(lldb)     command script add -s asynchronous -f fruitstrap_250dde94e0f57540e041b9de5f548198d6292ec0.autoexit_command autoexit
+(lldb)     command script add -s asynchronous -f fruitstrap_250dde94e0f57540e041b9de5f548198d6292ec0.safequit_command safequit
+(lldb)     connect
+(lldb)     run
+success
+(lldb)     autoexit
+2017-03-23 13:01:45.796 ThaliTest[842:982097] Apache Cordova native platform version 4.3.1 is starting.
+2017-03-23 13:01:45.799 ThaliTest[842:982097] Multi-tasking -> Device: YES, App: YES
+2017-03-23 13:01:45.828 ThaliTest[842:982097] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2017-03-23 13:01:46.488 ThaliTest[842:982097] Using UIWebView
+2017-03-23 13:01:46.493 ThaliTest[842:982097] [CDVTimer][handleopenurl] 0.249028ms
+2017-03-23 13:01:46.501 ThaliTest[842:982097] [CDVTimer][intentandnavigationfilter] 7.548988ms
+2017-03-23 13:01:46.502 ThaliTest[842:982097] [CDVTimer][gesturehandler] 0.329971ms
+2017-03-23 13:01:46.502 ThaliTest[842:982097] [CDVTimer][TotalPluginStartup] 9.383976ms
+2017-03-23 13:02:01.676 ThaliTest[842:982097] Resetting plugins due to page load.
+2017-03-23 13:02:02.158 ThaliTest[842:982097] Finished load of: file:///var/containers/Bundle/Application/69D99F8C-5291-4A99-8A5C-CBB2DB1037C1/ThaliTest.app/www/index.html
+2017-03-23 13:02:02.409 ThaliTest[842:982097] JXcore Cordova plugin initializing
+2017-03-23 13:02:02.410 ThaliTest[842:982318] JXcore instance initializing
+Initializing JXcore engine
+JXcore engine is ready
+Starting JXcore engine
+Platform ios
+Process ARCH arm
+JXcore Cordova bridge is ready!
+JXcore engine is started
+2017-03-23 10:02:13 - DEBUG thaliMobileNativeWrapper: 'Method peerAvailabilityChanged registered to native'
+2017-03-23 10:02:13 - DEBUG thaliMobileNativeWrapper: 'Method discoveryAdvertisingStateUpdateNonTCP registered to native'
+2017-03-23 10:02:13 - DEBUG thaliMobileNativeWrapper: 'Method multiConnectResolved registered to native'
+2017-03-23 10:02:13 - DEBUG thaliMobileNativeWrapper: 'networkChanged: {"cellular":"doNotCare","bssid":"70:cd:60:ff:5a:7","wifi":"on","bluetoothLowEnergy":"off","bluetooth":"off","ssid":"🐢"}'
+2017-03-23 10:02:13 - DEBUG thaliMobileNativeWrapper: 'Method networkChanged registered to native'
+2017-03-23 10:02:13 - DEBUG thaliMobileNativeWrapper: 'Method multiConnectConnectionFailure registered to native'
+2017-03-23 10:02:13 - DEBUG thaliMobileNativeWrapper: 'Method incomingConnectionToPortNumberFailed registered to native'
+2017-03-23 10:02:14 - DEBUG UnitTest_app: 'My device name is: 'Apple-Rockwell iPhone''
+2017-03-23 10:02:14 - WARN testUtils: 'myNameCallback not set!'
+2017-03-23 10:02:16 - INFO runTests: 'Starting tests. Network type: NATIVE. Platform: ios'
+2017-03-23 10:02:16 - INFO testLoader: 'loading file: /private/var/containers/Bundle/Application/69D99F8C-5291-4A99-8A5C-CBB2DB1037C1/ThaliTest.app/www/jxcore/bv_tests/testMakeIntoCloseAllServer.js'
+2017-03-23 10:02:16 - INFO testLoader: 'loading file: /private/var/containers/Bundle/Application/69D99F8C-5291-4A99-8A5C-CBB2DB1037C1/ThaliTest.app/www/jxcore/bv_tests/testPouchDBCheckpointPlugin.js'
+2017-03-23 10:02:17 - INFO testLoader: 'loading file: /private/var/containers/Bundle/Application/69D99F8C-5291-4A99-8A5C-CBB2DB1037C1/ThaliTest.app/www/jxcore/bv_tests/testPouchDBGenerator.js'
+2017-03-23 10:02:17 - INFO testLoader: 'loading file: /private/var/containers/Bundle/Application/69D99F8C-5291-4A99-8A5C-CBB2DB1037C1/ThaliTest.app/www/jxcore/bv_tests/testPromiseQueue.js'
+2017-03-23 10:02:17 - INFO testLoader: 'loading file: /private/var/containers/Bundle/Application/69D99F8C-5291-4A99-8A5C-CBB2DB1037C1/ThaliTest.app/www/jxcore/bv_tests/testTests.js'
+2017-03-23 10:02:17 - INFO testLoader: 'loading file: /private/var/containers/Bundle/Application/69D99F8C-5291-4A99-8A5C-CBB2DB1037C1/ThaliTest.app/www/jxcore/bv_tests/testUsn.js'
+2017-03-23 10:02:17 - INFO testLoader: 'loading file: /private/var/containers/Bundle/Application/69D99F8C-5291-4A99-8A5C-CBB2DB1037C1/ThaliTest.app/www/jxcore/bv_tests/testNativeMethod.js'
+2017-03-23 10:02:17 - INFO testLoader: 'loading file: /private/var/containers/Bundle/Application/69D99F8C-5291-4A99-8A5C-CBB2DB1037C1/ThaliTest.app/www/jxcore/bv_tests/testThaliMobileNative.js'
+2017-03-23 10:02:17 - INFO testLoader: 'loading file: /private/var/containers/Bundle/Application/69D99F8C-5291-4A99-8A5C-CBB2DB1037C1/ThaliTest.app/www/jxcore/bv_tests/testThaliMobileNativeAndroid.js'
+2017-03-23 10:02:17 - INFO testLoader: 'loading file: /private/var/containers/Bundle/Application/69D99F8C-5291-4A99-8A5C-CBB2DB1037C1/ThaliTest.app/www/jxcore/bv_tests/testThaliMobileNativeiOS.js'
+2017-03-23 10:02:17 - INFO testLoader: 'loading file: /private/var/containers/Bundle/Application/69D99F8C-5291-4A99-8A5C-CBB2DB1037C1/ThaliTest.app/www/jxcore/bv_tests/testThaliMobileNativeDiscoveryCoordinated.js'
+2017-03-23 10:02:17 - INFO testLoader: 'loading file: /private/var/containers/Bundle/Application/69D99F8C-5291-4A99-8A5C-CBB2DB1037C1/ThaliTest.app/www/jxcore/bv_tests/testCreateNativeListener.js'
+2017-03-23 10:02:17 - INFO testLoader: 'loading file: /private/var/containers/Bundle/Application/69D99F8C-5291-4A99-8A5C-CBB2DB1037C1/ThaliTest.app/www/jxcore/bv_tests/testCreatePeerListener.js'
+2017-03-23 10:02:17 - INFO testLoader: 'loading file: /private/var/containers/Bundle/Application/69D99F8C-5291-4A99-8A5C-CBB2DB1037C1/ThaliTest.app/www/jxcore/bv_tests/testThaliTcpServersManager.js'
+2017-03-23 10:02:17 - INFO testLoader: 'loading file: /private/var/containers/Bundle/Application/69D99F8C-5291-4A99-8A5C-CBB2DB1037C1/ThaliTest.app/www/jxcore/bv_tests/testThaliMobileNativeWrapper.js'
+2017-03-23 10:02:17 - INFO testLoader: 'loading file: /private/var/containers/Bundle/Application/69D99F8C-5291-4A99-8A5C-CBB2DB1037C1/ThaliTest.app/www/jxcore/bv_tests/testThaliWifiInfrastructure.js'
+2017-03-23 10:02:17 - INFO testLoader: 'loading file: /private/var/containers/Bundle/Application/69D99F8C-5291-4A99-8A5C-CBB2DB1037C1/ThaliTest.app/www/jxcore/bv_tests/testThaliMobile.js'
+2017-03-23 10:02:17 - INFO testLoader: 'loading file: /private/var/containers/Bundle/Application/69D99F8C-5291-4A99-8A5C-CBB2DB1037C1/ThaliTest.app/www/jxcore/bv_tests/testThaliPeerAction.js'
+2017-03-23 10:02:17 - INFO testLoader: 'loading file: /private/var/containers/Bundle/Application/69D99F8C-5291-4A99-8A5C-CBB2DB1037C1/ThaliTest.app/www/jxcore/bv_tests/testThaliPeerDictionary.js'
+2017-03-23 10:02:17 - INFO testLoader: 'loading file: /private/var/containers/Bundle/Application/69D99F8C-5291-4A99-8A5C-CBB2DB1037C1/ThaliTest.app/www/jxcore/bv_tests/testThaliPeerPoolDefault.js'
+2017-03-23 10:02:17 - INFO testLoader: 'loading file: /private/var/containers/Bundle/Application/69D99F8C-5291-4A99-8A5C-CBB2DB1037C1/ThaliTest.app/www/jxcore/bv_tests/testThaliPeerPoolInterface.js'
+2017-03-23 10:02:17 - INFO testLoader: 'loading file: /private/var/containers/Bundle/Application/69D99F8C-5291-4A99-8A5C-CBB2DB1037C1/ThaliTest.app/www/jxcore/bv_tests/testThaliPeerPoolOneAtATime.js'
+2017-03-23 10:02:18 - INFO testLoader: 'loading file: /private/var/containers/Bundle/Application/69D99F8C-5291-4A99-8A5C-CBB2DB1037C1/ThaliTest.app/www/jxcore/bv_tests/testThaliNotification.js'
+2017-03-23 10:02:18 - INFO testLoader: 'loading file: /private/var/containers/Bundle/Application/69D99F8C-5291-4A99-8A5C-CBB2DB1037C1/ThaliTest.app/www/jxcore/bv_tests/testThaliNotificationAction.js'
+2017-03-23 10:02:19 - INFO testLoader: 'loading file: /private/var/containers/Bundle/Application/69D99F8C-5291-4A99-8A5C-CBB2DB1037C1/ThaliTest.app/www/jxcore/bv_tests/testThaliNotificationBeacons.js'
+2017-03-23 10:02:19 - INFO testLoader: 'loading file: /private/var/containers/Bundle/Application/69D99F8C-5291-4A99-8A5C-CBB2DB1037C1/ThaliTest.app/www/jxcore/bv_tests/testThaliNotificationClient.js'
+2017-03-23 10:02:19 - INFO testLoader: 'loading file: /private/var/containers/Bundle/Application/69D99F8C-5291-4A99-8A5C-CBB2DB1037C1/ThaliTest.app/www/jxcore/bv_tests/testThaliNotificationLocal.js'
+2017-03-23 10:02:19 - INFO testLoader: 'loading file: /private/var/containers/Bundle/Application/69D99F8C-5291-4A99-8A5C-CBB2DB1037C1/ThaliTest.app/www/jxcore/bv_tests/testThaliNotificationServer.js'
+2017-03-23 10:02:19 - INFO testLoader: 'loading file: /private/var/containers/Bundle/Application/69D99F8C-5291-4A99-8A5C-CBB2DB1037C1/ThaliTest.app/www/jxcore/bv_tests/testThaliPullReplicationFromNotification.js'
+2017-03-23 10:02:19 - INFO testLoader: 'loading file: /private/var/containers/Bundle/Application/69D99F8C-5291-4A99-8A5C-CBB2DB1037C1/ThaliTest.app/www/jxcore/bv_tests/testThaliPullReplicationFromNotificationCoordinated.js'
+2017-03-23 10:02:19 - INFO testLoader: 'loading file: /private/var/containers/Bundle/Application/69D99F8C-5291-4A99-8A5C-CBB2DB1037C1/ThaliTest.app/www/jxcore/bv_tests/testThaliReplicationPeerAction.js'
+2017-03-23 10:02:19 - INFO testLoader: 'loading file: /private/var/containers/Bundle/Application/69D99F8C-5291-4A99-8A5C-CBB2DB1037C1/ThaliTest.app/www/jxcore/bv_tests/testThaliReplicationPeerActionCoordinated.js'
+2017-03-23 10:02:19 - INFO testLoader: 'loading file: /private/var/containers/Bundle/Application/69D99F8C-5291-4A99-8A5C-CBB2DB1037C1/ThaliTest.app/www/jxcore/bv_tests/testThaliReplicationUtilities.js'
+2017-03-23 10:02:19 - INFO testLoader: 'loading file: /private/var/containers/Bundle/Application/69D99F8C-5291-4A99-8A5C-CBB2DB1037C1/ThaliTest.app/www/jxcore/bv_tests/testThaliSendNotificationBasedOnReplication.js'
+2017-03-23 10:02:19 - INFO testLoader: 'loading file: /private/var/containers/Bundle/Application/69D99F8C-5291-4A99-8A5C-CBB2DB1037C1/ThaliTest.app/www/jxcore/bv_tests/testLocalSeqManager.js'
+2017-03-23 10:02:19 - INFO testLoader: 'loading file: /private/var/containers/Bundle/Application/69D99F8C-5291-4A99-8A5C-CBB2DB1037C1/ThaliTest.app/www/jxcore/bv_tests/testLocalSeqManagerCoordinated.js'
+2017-03-23 10:02:19 - INFO testLoader: 'loading file: /private/var/containers/Bundle/Application/69D99F8C-5291-4A99-8A5C-CBB2DB1037C1/ThaliTest.app/www/jxcore/bv_tests/testThaliManager.js'
+2017-03-23 10:02:19 - INFO testLoader: 'loading file: /private/var/containers/Bundle/Application/69D99F8C-5291-4A99-8A5C-CBB2DB1037C1/ThaliTest.app/www/jxcore/bv_tests/testThaliManagerCoordinated.js'
+2017-03-23 10:02:19 - INFO testLoader: 'loading file: /private/var/containers/Bundle/Application/69D99F8C-5291-4A99-8A5C-CBB2DB1037C1/ThaliTest.app/www/jxcore/bv_tests/testProxify.js'
+2017-03-23 10:02:19 - INFO testLoader: 'loading file: /private/var/containers/Bundle/Application/69D99F8C-5291-4A99-8A5C-CBB2DB1037C1/ThaliTest.app/www/jxcore/bv_tests/testSSDPServer.js'
+2017-03-23 10:02:19 - DEBUG UnitTest_app: 'Unit Test app is loaded'
+Warning: iOS does not support ToggleBluetooth
+2017-03-23 13:02:19.762 ThaliTest[842:982097] THREAD WARNING: ['JXcore'] took '13.159180' ms. Plugin should use a background thread.
+2017-03-23 10:02:19 - INFO CoordinatedClient: 'Connecting to coordination server on http://192.168.2.1:3000/'
+2017-03-23 10:02:19 - DEBUG CoordinatedClient: 'connected to the test server'
+TAP version 13
+# setup
+# closeAll can close even when connections open
+2017-03-23 10:02:20 - DEBUG makeIntoCloseAllServer: 'closeAll called on server'
+ok 1 not possible to connect to the server anymore
+# teardown
+# setup
+# closeAll with promise
+2017-03-23 10:02:23 - DEBUG makeIntoCloseAllServer: 'closeAll called on server'
+ok 2 not possible to connect to the server anymore
+# teardown
+# setup
+# closeAll properly throws when closing a non open server with eatNotRunning set to false
+2017-03-23 10:02:24 - DEBUG makeIntoCloseAllServer: 'closeAll called on server'
+ok 3 Got the right error
+# teardown
+# setup
+# closeAll works even with a server that is not listening yet witheatNotRunning set to true
+2017-03-23 10:02:25 - DEBUG makeIntoCloseAllServer: 'closeAll called on server'
+# teardown
+# setup
+# Call of onCheckpointReached handler on a single db change
+2017-03-23 10:02:25 - DEBUG CoordinatedClient: 'test was skipped, name: 'Call of onCheckpointReached handler on a single db change''
+# teardown
+# setup
+# Call of multiple onCheckpointReached handlers on a single db change
+2017-03-23 10:02:27 - DEBUG CoordinatedClient: 'test was skipped, name: 'Call of multiple onCheckpointReached handlers on a single db change''
+# teardown
+# setup
+# Call of onCheckpointReached handler on multiple db changes that are in the checkpoints plugin delay interval
+2017-03-23 10:02:28 - DEBUG CoordinatedClient: 'test was skipped, name: 'Call of onCheckpointReached handler on multiple db changes that are in the checkpoints plugin delay interval''
+# teardown
+# setup
+# Call of onCheckpointReached handler on multiple db changes that are out of the checkpoints plugin delay interval
+2017-03-23 10:02:29 - DEBUG CoordinatedClient: 'test was skipped, name: 'Call of onCheckpointReached handler on multiple db changes that are out of the checkpoints plugin delay interval''
+# teardown
+# setup
+# test defaultDirectory
+ok 4 should be equal
+ok 5 should be equal
+ok 6 should be equal
+# teardown
+# setup
+# test defaultAdapter
+ok 7 should be equal
+ok 8 should be equal
+ok 9 should be equal
+ok 10 should be equal
+ok 11 should be equal
+ok 12 should be equal
+ok 13 should be equal
+ok 14 should be equal
+# teardown
+# setup
+# enqueue and run in order
+ok 15 firstPromise setTimeout
+ok 16 firstPromise result
+ok 17 firstPromise testValue
+ok 18 secondPromise setTimeout
+ok 19 secondPromise result
+ok 20 secondPromise testValue
+ok 21 thirdPromise in promise
+ok 22 thirdPromise result
+ok 23 thirdPromise testValue
+# teardown
+# setup
+# enqueueAtTop and run backwards
+ok 24 thirdPromise - first to run
+ok 25 thirdPromise - in resolve
+ok 26 secondPromise - second to run
+ok 27 secondPromise - in catch
+ok 28 firstPromise - third to run
+ok 29 firstPromise - in then
+ok 30 testing promises
+# teardown
+# setup
+# mix enqueue and enqueueAtTop
+ok 31 fourth
+ok 32 fourth
+ok 33 second
+ok 34 secondPromise - in then
+ok 35 first
+ok 36 firstPromise - in catch
+ok 37 third
+ok 38 thirdPromise - in then
+ok 39 testingPromises
+# teardown
+# setup
+# queues handled independently
+ok 40 all short operations completed before the long resolves
+# teardown
+# setup
+# basic
+ok 41 sane
+# teardown
+# setup
+# another
+ok 42 sane
+# teardown
+# setup
+# can pass data in setup
+ok 43 test participant has uuid
+ok 44 participant data matches
+ok 45 test participant has uuid
+ok 46 participant data matches
+ok 47 own UUID is found from the participants list
+# teardown
+# setup
+# Correctly parses/stringifies USN
+ok 48 correctly parses USN string
+ok 49 throws if usn has invalid prefix
+ok 50 throws if usn has invalid identifier format
+ok 51 throws if usn has invalid generation
+ok 52 correctly stringifies peer
+# teardown
+# setup
+# onPeerLost calls jxcore
+2017-03-23 10:02:43 - DEBUG CoordinatedClient: 'test was skipped, name: 'onPeerLost calls jxcore''
+# teardown
+2017-03-23 10:02:44 - DEBUG thaliMobileNativeWrapper: 'Method peerAvailabilityChanged registered to native'
+2017-03-23 10:02:44 - DEBUG thaliMobileNativeWrapper: 'Method discoveryAdvertisingStateUpdateNonTCP registered to native'
+2017-03-23 10:02:44 - DEBUG thaliMobileNativeWrapper: 'Method multiConnectResolved registered to native'
+2017-03-23 10:02:44 - DEBUG thaliMobileNativeWrapper: 'networkChanged: {"cellular":"doNotCare","bssid":"70:cd:60:ff:5a:7","wifi":"on","bluetoothLowEnergy":"off","bluetooth":"off","ssid":"🐢"}'
+2017-03-23 10:02:44 - INFO thaliMobile: 'Filtered out networkChangedNonTCP (was in stopped state).'
+2017-03-23 10:02:44 - DEBUG thaliMobileNativeWrapper: 'Method networkChanged registered to native'
+2017-03-23 10:02:44 - DEBUG thaliMobileNativeWrapper: 'Method multiConnectConnectionFailure registered to native'
+2017-03-23 10:02:44 - DEBUG thaliMobileNativeWrapper: 'Method incomingConnectionToPortNumberFailed registered to native'
+# setup
+# onPeerDiscovered calls jxcore
+2017-03-23 10:02:44 - DEBUG CoordinatedClient: 'test was skipped, name: 'onPeerDiscovered calls jxcore''
+# teardown
+2017-03-23 10:02:45 - DEBUG thaliMobileNativeWrapper: 'Method peerAvailabilityChanged registered to native'
+2017-03-23 10:02:45 - DEBUG thaliMobileNativeWrapper: 'Method discoveryAdvertisingStateUpdateNonTCP registered to native'
+2017-03-23 10:02:45 - DEBUG thaliMobileNativeWrapper: 'Method multiConnectResolved registered to native'
+2017-03-23 10:02:45 - DEBUG thaliMobileNativeWrapper: 'networkChanged: {"cellular":"doNotCare","bssid":"70:cd:60:ff:5a:7","wifi":"on","bluetoothLowEnergy":"off","bluetooth":"off","ssid":"🐢"}'
+2017-03-23 10:02:45 - INFO thaliMobile: 'Filtered out networkChangedNonTCP (was in stopped state).'
+2017-03-23 10:02:45 - DEBUG thaliMobileNativeWrapper: 'Method networkChanged registered to native'
+2017-03-23 10:02:45 - DEBUG thaliMobileNativeWrapper: 'Method multiConnectConnectionFailure registered to native'
+2017-03-23 10:02:45 - DEBUG thaliMobileNativeWrapper: 'Method incomingConnectionToPortNumberFailed registered to native'
+# setup
+# Can call start/stopListeningForAdvertisements
+2017-03-23 10:02:46 - DEBUG thaliMobileNativeWrapper: 'discoveryAdvertisingStateUpdateNonTCP: {"discoveryActive":true,"advertisingActive":false}'
+2017-03-23 10:02:46 - INFO thaliMobile: 'Received state ({"discoveryActive":true,"advertisingActive":false}) did not match with target ({"started":false,"listening":false,"advertising":false,"networkType":"BOTH","startArguments":{"router":null,"pskIdToSecret":null,"networkType":null}})'
+2017-03-23 10:02:46 - INFO thaliMobile: 'Filtered out discoveryAdvertisingStateUpdate (was in stopped state).'
+ok 53 Can call startListeningForAdvertisements without error
+2017-03-23 10:02:46 - DEBUG thaliMobileNativeWrapper: 'discoveryAdvertisingStateUpdateNonTCP: {"discoveryActive":false,"advertisingActive":false}'
+2017-03-23 10:02:46 - INFO thaliMobile: 'Filtered out discoveryAdvertisingStateUpdate (was in stopped state).'
+ok 54 Can call stopListeningForAdvertisements without error
+# teardown
+2017-03-23 10:02:47 - DEBUG thaliMobileNativeWrapper: 'discoveryAdvertisingStateUpdateNonTCP: {"discoveryActive":false,"advertisingActive":false}'
+2017-03-23 10:02:47 - INFO thaliMobile: 'Filtered out discoveryAdvertisingStateUpdate (was in stopped state).'
+ok 55 Should be able to call stopListeningForAdvertisements in teardown
+2017-03-23 10:02:47 - DEBUG thaliMobileNativeWrapper: 'discoveryAdvertisingStateUpdateNonTCP: {"discoveryActive":false,"advertisingActive":false}'
+2017-03-23 10:02:47 - INFO thaliMobile: 'Filtered out discoveryAdvertisingStateUpdate (was in stopped state).'
+ok 56 Should be able to call stopAdvertisingAndListening in teardown
+2017-03-23 10:02:47 - DEBUG thaliMobileNativeWrapper: 'Method peerAvailabilityChanged registered to native'
+2017-03-23 10:02:47 - DEBUG thaliMobileNativeWrapper: 'Method discoveryAdvertisingStateUpdateNonTCP registered to native'
+2017-03-23 10:02:47 - DEBUG thaliMobileNativeWrapper: 'Method multiConnectResolved registered to native'
+2017-03-23 10:02:47 - DEBUG thaliMobileNativeWrapper: 'networkChanged: {"cellular":"doNotCare","bssid":"70:cd:60:ff:5a:7","wifi":"on","bluetoothLowEnergy":"off","bluetooth":"off","ssid":"🐢"}'
+2017-03-23 10:02:47 - INFO thaliMobile: 'Filtered out networkChangedNonTCP (was in stopped state).'
+2017-03-23 10:02:47 - DEBUG thaliMobileNativeWrapper: 'Method networkChanged registered to native'
+2017-03-23 10:02:47 - DEBUG thaliMobileNativeWrapper: 'Method multiConnectConnectionFailure registered to native'
+2017-03-23 10:02:47 - DEBUG thaliMobileNativeWrapper: 'Method incomingConnectionToPortNumberFailed registered to native'
+# setup
+# Calling startListeningForAdvertisements twice is NOT an error
+2017-03-23 10:02:48 - DEBUG thaliMobileNativeWrapper: 'discoveryAdvertisingStateUpdateNonTCP: {"discoveryActive":true,"advertisingActive":false}'
+2017-03-23 10:02:48 - INFO thaliMobile: 'Received state ({"discoveryActive":true,"advertisingActive":false}) did not match with target ({"started":false,"listening":false,"advertising":false,"networkType":"BOTH","startArguments":{"router":null,"pskIdToSecret":null,"networkType":null}})'
+2017-03-23 10:02:48 - INFO thaliMobile: 'Filtered out discoveryAdvertisingStateUpdate (was in stopped state).'
+ok 57 Can call startListeningForAdvertisements without error
+2017-03-23 10:02:48 - DEBUG thaliMobileNativeWrapper: 'discoveryAdvertisingStateUpdateNonTCP: {"discoveryActive":true,"advertisingActive":false}'
+2017-03-23 10:02:48 - INFO thaliMobile: 'Received state ({"discoveryActive":true,"advertisingActive":false}) did not match with target ({"started":false,"listening":false,"advertising":false,"networkType":"BOTH","startArguments":{"router":null,"pskIdToSecret":null,"networkType":null}})'
+2017-03-23 10:02:48 - INFO thaliMobile: 'Filtered out discoveryAdvertisingStateUpdate (was in stopped state).'
+ok 58 Can call startListeningForAdvertisements twice without error
+# teardown
+2017-03-23 10:02:48 - DEBUG thaliMobileNativeWrapper: 'discoveryAdvertisingStateUpdateNonTCP: {"discoveryActive":false,"advertisingActive":false}'
+2017-03-23 10:02:48 - INFO thaliMobile: 'Filtered out discoveryAdvertisingStateUpdate (was in stopped state).'
+ok 59 Should be able to call stopListeningForAdvertisements in teardown
+2017-03-23 10:02:48 - DEBUG thaliMobileNativeWrapper: 'discoveryAdvertisingStateUpdateNonTCP: {"discoveryActive":false,"advertisingActive":false}'
+2017-03-23 10:02:48 - INFO thaliMobile: 'Filtered out discoveryAdvertisingStateUpdate (was in stopped state).'
+ok 60 Should be able to call stopAdvertisingAndListening in teardown
+2017-03-23 10:02:48 - DEBUG thaliMobileNativeWrapper: 'Method peerAvailabilityChanged registered to native'
+2017-03-23 10:02:48 - DEBUG thaliMobileNativeWrapper: 'Method discoveryAdvertisingStateUpdateNonTCP registered to native'
+2017-03-23 10:02:48 - DEBUG thaliMobileNativeWrapper: 'Method multiConnectResolved registered to native'
+2017-03-23 10:02:48 - DEBUG thaliMobileNativeWrapper: 'networkChanged: {"cellular":"doNotCare","bssid":"70:cd:60:ff:5a:7","wifi":"on","bluetoothLowEnergy":"off","bluetooth":"off","ssid":"🐢"}'
+2017-03-23 10:02:48 - INFO thaliMobile: 'Filtered out networkChangedNonTCP (was in stopped state).'
+2017-03-23 10:02:48 - DEBUG thaliMobileNativeWrapper: 'Method networkChanged registered to native'
+2017-03-23 10:02:48 - DEBUG thaliMobileNativeWrapper: 'Method multiConnectConnectionFailure registered to native'
+2017-03-23 10:02:48 - DEBUG thaliMobileNativeWrapper: 'Method incomingConnectionToPortNumberFailed registered to native'
+# setup
+# Calling stopListeningForAdvertisements without calling start is NOT an error
+2017-03-23 10:02:49 - DEBUG thaliMobileNativeWrapper: 'discoveryAdvertisingStateUpdateNonTCP: {"discoveryActive":false,"advertisingActive":false}'
+2017-03-23 10:02:49 - INFO thaliMobile: 'Filtered out discoveryAdvertisingStateUpdate (was in stopped state).'
+ok 61 Can call stopListeningForAdvertisements without error
+2017-03-23 10:02:49 - DEBUG thaliMobileNativeWrapper: 'discoveryAdvertisingStateUpdateNonTCP: {"discoveryActive":false,"advertisingActive":false}'
+2017-03-23 10:02:49 - INFO thaliMobile: 'Filtered out discoveryAdvertisingStateUpdate (was in stopped state).'
+ok 62 Can call stopListeningForAdvertisements without error
+# teardown
+2017-03-23 10:02:49 - DEBUG thaliMobileNativeWrapper: 'discoveryAdvertisingStateUpdateNonTCP: {"discoveryActive":false,"advertisingActive":false}'
+2017-03-23 10:02:49 - INFO thaliMobile: 'Filtered out discoveryAdvertisingStateUpdate (was in stopped state).'
+ok 63 Should be able to call stopListeningForAdvertisements in teardown
+2017-03-23 10:02:49 - DEBUG thaliMobileNativeWrapper: 'discoveryAdvertisingStateUpdateNonTCP: {"discoveryActive":false,"advertisingActive":false}'
+2017-03-23 10:02:49 - INFO thaliMobile: 'Filtered out discoveryAdvertisingStateUpdate (was in stopped state).'
+ok 64 Should be able to call stopAdvertisingAndListening in teardown
+2017-03-23 10:02:49 - DEBUG thaliMobileNativeWrapper: 'Method peerAvailabilityChanged registered to native'
+2017-03-23 10:02:49 - DEBUG thaliMobileNativeWrapper: 'Method discoveryAdvertisingStateUpdateNonTCP registered to native'
+2017-03-23 10:02:49 - DEBUG thaliMobileNativeWrapper: 'Method multiConnectResolved registered to native'
+2017-03-23 10:02:49 - DEBUG thaliMobileNativeWrapper: 'networkChanged: {"cellular":"doNotCare","bssid":"70:cd:60:ff:5a:7","wifi":"on","bluetoothLowEnergy":"off","bluetooth":"off","ssid":"🐢"}'
+2017-03-23 10:02:49 - INFO thaliMobile: 'Filtered out networkChangedNonTCP (was in stopped state).'
+2017-03-23 10:02:49 - DEBUG thaliMobileNativeWrapper: 'Method networkChanged registered to native'
+2017-03-23 10:02:49 - DEBUG thaliMobileNativeWrapper: 'Method multiConnectConnectionFailure registered to native'
+2017-03-23 10:02:49 - DEBUG thaliMobileNativeWrapper: 'Method incomingConnectionToPortNumberFailed registered to native'
+# setup
+# Can call start/stopUpdateAdvertisingAndListening
+2017-03-23 10:02:50 - DEBUG thaliMobileNativeWrapper: 'discoveryAdvertisingStateUpdateNonTCP: {"discoveryActive":false,"advertisingActive":true}'
+2017-03-23 10:02:50 - INFO thaliMobile: 'Received state ({"discoveryActive":false,"advertisingActive":true}) did not match with target ({"started":false,"listening":false,"advertising":false,"networkType":"BOTH","startArguments":{"router":null,"pskIdToSecret":null,"networkType":null}})'
+2017-03-23 10:02:50 - INFO thaliMobile: 'Filtered out discoveryAdvertisingStateUpdate (was in stopped state).'
+ok 65 Can call startUpdateAdvertisingAndListening without error
+2017-03-23 10:02:50 - DEBUG thaliMobileNativeWrapper: 'discoveryAdvertisingStateUpdateNonTCP: {"discoveryActive":false,"advertisingActive":false}'
+2017-03-23 10:02:50 - INFO thaliMobile: 'Filtered out discoveryAdvertisingStateUpdate (was in stopped state).'
+ok 66 Can call stopAdvertisingAndListening without error
+# teardown
+2017-03-23 10:02:50 - DEBUG thaliMobileNativeWrapper: 'discoveryAdvertisingStateUpdateNonTCP: {"discoveryActive":false,"advertisingActive":false}'
+2017-03-23 10:02:50 - INFO thaliMobile: 'Filtered out discoveryAdvertisingStateUpdate (was in stopped state).'
+ok 67 Should be able to call stopListeningForAdvertisements in teardown
+2017-03-23 10:02:50 - DEBUG thaliMobileNativeWrapper: 'discoveryAdvertisingStateUpdateNonTCP: {"discoveryActive":false,"advertisingActive":false}'
+2017-03-23 10:02:50 - INFO thaliMobile: 'Filtered out discoveryAdvertisingStateUpdate (was in stopped state).'
+ok 68 Should be able to call stopAdvertisingAndListening in teardown
+2017-03-23 10:02:50 - DEBUG thaliMobileNativeWrapper: 'Method peerAvailabilityChanged registered to native'
+2017-03-23 10:02:50 - DEBUG thaliMobileNativeWrapper: 'Method discoveryAdvertisingStateUpdateNonTCP registered to native'
+2017-03-23 10:02:50 - DEBUG thaliMobileNativeWrapper: 'Method multiConnectResolved registered to native'
+2017-03-23 10:02:50 - DEBUG thaliMobileNativeWrapper: 'networkChanged: {"cellular":"doNotCare","bssid":"70:cd:60:ff:5a:7","wifi":"on","bluetoothLowEnergy":"off","bluetooth":"off","ssid":"🐢"}'
+2017-03-23 10:02:50 - INFO thaliMobile: 'Filtered out networkChangedNonTCP (was in stopped state).'
+2017-03-23 10:02:50 - DEBUG thaliMobileNativeWrapper: 'Method networkChanged registered to native'
+2017-03-23 10:02:50 - DEBUG thaliMobileNativeWrapper: 'Method multiConnectConnectionFailure registered to native'
+2017-03-23 10:02:50 - DEBUG thaliMobileNativeWrapper: 'Method incomingConnectionToPortNumberFailed registered to native'
+# setup
+# Calling startUpdateAdvertisingAndListening twice is NOT an error
+2017-03-23 10:02:52 - DEBUG thaliMobileNativeWrapper: 'discoveryAdvertisingStateUpdateNonTCP: {"discoveryActive":false,"advertisingActive":true}'
+2017-03-23 10:02:52 - INFO thaliMobile: 'Received state ({"discoveryActive":false,"advertisingActive":true}) did not match with target ({"started":false,"listening":false,"advertising":false,"networkType":"BOTH","startArguments":{"router":null,"pskIdToSecret":null,"networkType":null}})'
+2017-03-23 10:02:52 - INFO thaliMobile: 'Filtered out discoveryAdvertisingStateUpdate (was in stopped state).'
+ok 69 Can call startUpdateAdvertisingAndListening without error
+2017-03-23 10:02:52 - DEBUG thaliMobileNativeWrapper: 'discoveryAdvertisingStateUpdateNonTCP: {"discoveryActive":false,"advertisingActive":true}'
+2017-03-23 10:02:52 - INFO thaliMobile: 'Received state ({"discoveryActive":false,"advertisingActive":true}) did not match with target ({"started":false,"listening":false,"advertising":false,"networkType":"BOTH","startArguments":{"router":null,"pskIdToSecret":null,"networkType":null}})'
+2017-03-23 10:02:52 - INFO thaliMobile: 'Filtered out discoveryAdvertisingStateUpdate (was in stopped state).'
+ok 70 Can call startUpdateAdvertisingAndListening twice without error
+# teardown
+2017-03-23 10:02:52 - DEBUG thaliMobileNativeWrapper: 'discoveryAdvertisingStateUpdateNonTCP: {"discoveryActive":false,"advertisingActive":true}'
+2017-03-23 10:02:52 - INFO thaliMobile: 'Received state ({"discoveryActive":false,"advertisingActive":true}) did not match with target ({"started":false,"listening":false,"advertising":false,"networkType":"BOTH","startArguments":{"router":null,"pskIdToSecret":null,"networkType":null}})'
+2017-03-23 10:02:52 - INFO thaliMobile: 'Filtered out discoveryAdvertisingStateUpdate (was in stopped state).'
+ok 71 Should be able to call stopListeningForAdvertisements in teardown
+2017-03-23 10:02:52 - DEBUG thaliMobileNativeWrapper: 'discoveryAdvertisingStateUpdateNonTCP: {"discoveryActive":false,"advertisingActive":false}'
+2017-03-23 10:02:52 - INFO thaliMobile: 'Filtered out discoveryAdvertisingStateUpdate (was in stopped state).'
+ok 72 Should be able to call stopAdvertisingAndListening in teardown
+2017-03-23 10:02:52 - DEBUG thaliMobileNativeWrapper: 'Method peerAvailabilityChanged registered to native'
+2017-03-23 10:02:52 - DEBUG thaliMobileNativeWrapper: 'Method discoveryAdvertisingStateUpdateNonTCP registered to native'
+2017-03-23 10:02:52 - DEBUG thaliMobileNativeWrapper: 'Method multiConnectResolved registered to native'
+2017-03-23 10:02:52 - DEBUG thaliMobileNativeWrapper: 'networkChanged: {"cellular":"doNotCare","bssid":"70:cd:60:ff:5a:7","wifi":"on","bluetoothLowEnergy":"off","bluetooth":"off","ssid":"🐢"}'
+2017-03-23 10:02:52 - INFO thaliMobile: 'Filtered out networkChangedNonTCP (was in stopped state).'
+2017-03-23 10:02:52 - DEBUG thaliMobileNativeWrapper: 'Method networkChanged registered to native'
+2017-03-23 10:02:52 - DEBUG thaliMobileNativeWrapper: 'Method multiConnectConnectionFailure registered to native'
+2017-03-23 10:02:52 - DEBUG thaliMobileNativeWrapper: 'Method incomingConnectionToPortNumberFailed registered to native'
+# setup
+# Can call stopUpdateAdvertisingAndListening twice without start and it is not an error
+2017-03-23 10:02:53 - DEBUG thaliMobileNativeWrapper: 'discoveryAdvertisingStateUpdateNonTCP: {"discoveryActive":false,"advertisingActive":false}'
+2017-03-23 10:02:53 - INFO thaliMobile: 'Filtered out discoveryAdvertisingStateUpdate (was in stopped state).'
+ok 73 Can call startUpdateAdvertisingAndListening without error
+2017-03-23 10:02:53 - DEBUG thaliMobileNativeWrapper: 'discoveryAdvertisingStateUpdateNonTCP: {"discoveryActive":false,"advertisingActive":false}'
+2017-03-23 10:02:53 - INFO thaliMobile: 'Filtered out discoveryAdvertisingStateUpdate (was in stopped state).'
+ok 74 Can call stopAdvertisingAndListening without error
+# teardown
+2017-03-23 10:02:53 - DEBUG thaliMobileNativeWrapper: 'discoveryAdvertisingStateUpdateNonTCP: {"discoveryActive":false,"advertisingActive":false}'
+2017-03-23 10:02:53 - INFO thaliMobile: 'Filtered out discoveryAdvertisingStateUpdate (was in stopped state).'
+ok 75 Should be able to call stopListeningForAdvertisements in teardown
+2017-03-23 10:02:53 - DEBUG thaliMobileNativeWrapper: 'discoveryAdvertisingStateUpdateNonTCP: {"discoveryActive":false,"advertisingActive":false}'
+2017-03-23 10:02:53 - INFO thaliMobile: 'Filtered out discoveryAdvertisingStateUpdate (was in stopped state).'
+ok 76 Should be able to call stopAdvertisingAndListening in teardown
+2017-03-23 10:02:53 - DEBUG thaliMobileNativeWrapper: 'Method peerAvailabilityChanged registered to native'
+2017-03-23 10:02:53 - DEBUG thaliMobileNativeWrapper: 'Method discoveryAdvertisingStateUpdateNonTCP registered to native'
+2017-03-23 10:02:53 - DEBUG thaliMobileNativeWrapper: 'Method multiConnectResolved registered to native'
+2017-03-23 10:02:53 - DEBUG thaliMobileNativeWrapper: 'networkChanged: {"cellular":"doNotCare","bssid":"70:cd:60:ff:5a:7","wifi":"on","bluetoothLowEnergy":"off","bluetooth":"off","ssid":"🐢"}'
+2017-03-23 10:02:53 - INFO thaliMobile: 'Filtered out networkChangedNonTCP (was in stopped state).'
+2017-03-23 10:02:53 - DEBUG thaliMobileNativeWrapper: 'Method networkChanged registered to native'
+2017-03-23 10:02:53 - DEBUG thaliMobileNativeWrapper: 'Method multiConnectConnectionFailure registered to native'
+2017-03-23 10:02:53 - DEBUG thaliMobileNativeWrapper: 'Method incomingConnectionToPortNumberFailed registered to native'
+# setup
+# peerAvailabilityChange is called
+2017-03-23 10:02:54 - DEBUG thaliMobileNativeWrapper: 'discoveryAdvertisingStateUpdateNonTCP: {"discoveryActive":false,"advertisingActive":true}'
+2017-03-23 10:02:54 - INFO thaliMobile: 'Received state ({"discoveryActive":false,"advertisingActive":true}) did not match with target ({"started":false,"listening":false,"advertising":false,"networkType":"BOTH","startArguments":{"router":null,"pskIdToSecret":null,"networkType":null}})'
+2017-03-23 10:02:54 - INFO thaliMobile: 'Filtered out discoveryAdvertisingStateUpdate (was in stopped state).'
+ok 77 Can call startUpdateAdvertisingAndListeningwithout error
+2017-03-23 10:02:54 - DEBUG thaliMobileNativeWrapper: 'discoveryAdvertisingStateUpdateNonTCP: {"discoveryActive":true,"advertisingActive":true}'
+2017-03-23 10:02:54 - INFO thaliMobile: 'Received state ({"discoveryActive":true,"advertisingActive":true}) did not match with target ({"started":false,"listening":false,"advertising":false,"networkType":"BOTH","startArguments":{"router":null,"pskIdToSecret":null,"networkType":null}})'
+2017-03-23 10:02:54 - INFO thaliMobile: 'Filtered out discoveryAdvertisingStateUpdate (was in stopped state).'
+ok 78 Can call startListeningForAdvertisements without error
+ok 79 peers must be an array
+ok 80 peers must not be zero-length
+ok 81 peer must have only peerIdentifier, peerAvailable and generation properties
+ok 82 peerIdentifier must be a string
+ok 83 generation must be a number
+# teardown
+2017-03-23 10:02:57 - DEBUG thaliMobileNativeWrapper: 'discoveryAdvertisingStateUpdateNonTCP: {"discoveryActive":false,"advertisingActive":true}'
+2017-03-23 10:02:57 - INFO thaliMobile: 'Received state ({"discoveryActive":false,"advertisingActive":true}) did not match with target ({"started":false,"listening":false,"advertising":false,"networkType":"BOTH","startArguments":{"router":null,"pskIdToSecret":null,"networkType":null}})'
+2017-03-23 10:02:57 - INFO thaliMobile: 'Filtered out discoveryAdvertisingStateUpdate (was in stopped state).'
+ok 84 Should be able to call stopListeningForAdvertisements in teardown
+2017-03-23 10:02:57 - DEBUG thaliMobileNativeWrapper: 'discoveryAdvertisingStateUpdateNonTCP: {"discoveryActive":false,"advertisingActive":false}'
+2017-03-23 10:02:57 - INFO thaliMobile: 'Filtered out discoveryAdvertisingStateUpdate (was in stopped state).'
+ok 85 Should be able to call stopAdvertisingAndListening in teardown
+2017-03-23 10:02:57 - DEBUG thaliMobileNativeWrapper: 'Method peerAvailabilityChanged registered to native'
+2017-03-23 10:02:57 - DEBUG thaliMobileNativeWrapper: 'Method discoveryAdvertisingStateUpdateNonTCP registered to native'
+2017-03-23 10:02:57 - DEBUG thaliMobileNativeWrapper: 'Method multiConnectResolved registered to native'
+2017-03-23 10:02:57 - DEBUG thaliMobileNativeWrapper: 'networkChanged: {"cellular":"doNotCare","bssid":"70:cd:60:ff:5a:7","wifi":"on","bluetoothLowEnergy":"off","bluetooth":"off","ssid":"🐢"}'
+2017-03-23 10:02:57 - INFO thaliMobile: 'Filtered out networkChangedNonTCP (was in stopped state).'
+2017-03-23 10:02:57 - DEBUG thaliMobileNativeWrapper: 'Method networkChanged registered to native'
+2017-03-23 10:02:57 - DEBUG thaliMobileNativeWrapper: 'Method multiConnectConnectionFailure registered to native'
+2017-03-23 10:02:57 - DEBUG thaliMobileNativeWrapper: 'Method incomingConnectionToPortNumberFailed registered to native'
+# setup
+# Can connect to a remote peer
+2017-03-23 10:03:02 - DEBUG thaliMobileNativeWrapper: 'discoveryAdvertisingStateUpdateNonTCP: {"discoveryActive":false,"advertisingActive":true}'
+2017-03-23 10:03:02 - INFO thaliMobile: 'Received state ({"discoveryActive":false,"advertisingActive":true}) did not match with target ({"started":false,"listening":false,"advertising":false,"networkType":"BOTH","startArguments":{"router":null,"pskIdToSecret":null,"networkType":null}})'
+2017-03-23 10:03:02 - INFO thaliMobile: 'Filtered out discoveryAdvertisingStateUpdate (was in stopped state).'
+ok 86 Can call startUpdateAdvertisingAndListening without error
+2017-03-23 10:03:02 - DEBUG thaliMobileNativeWrapper: 'discoveryAdvertisingStateUpdateNonTCP: {"discoveryActive":true,"advertisingActive":true}'
+2017-03-23 10:03:02 - INFO thaliMobile: 'Received state ({"discoveryActive":true,"advertisingActive":true}) did not match with target ({"started":false,"listening":false,"advertising":false,"networkType":"BOTH","startArguments":{"router":null,"pskIdToSecret":null,"networkType":null}})'
+2017-03-23 10:03:02 - INFO thaliMobile: 'Filtered out discoveryAdvertisingStateUpdate (was in stopped state).'
+ok 87 Can call startListeningForAdvertisements without error
+2017-03-23 10:03:04 - INFO testThaliMobileNative: 'Received peerAvailabilityChanged with peers: [{"peerIdentifier":"E0579F36-4394-4349-840C-23A591490584","peerAvailable":true,"generation":0}]'
+2017-03-23 10:03:04 - DEBUG thaliMobileNativeTestUtils: 'Issuing multiConnect for E0579F36-4394-4349-840C-23A591490584 (syncValue: Vj3u644BszY4N2ibalaSiwahenZNf5Hc)'
+2017-03-23 10:03:04 - DEBUG thaliMobileNativeTestUtils: 'Got 'multiConnect' callback'
+2017-03-23 10:03:06 - DEBUG thaliMobileNativeWrapper: 'multiConnectResolved: {"syncValue":"Vj3u644BszY4N2ibalaSiwahenZNf5Hc","error":null,"portNumber":53572}'
+2017-03-23 10:03:06 - DEBUG thaliMobileNativeTestUtils: 'Got multiConnectResolved -syncValue: 'Vj3u644BszY4N2ibalaSiwahenZNf5Hc', error: 'null', listeningPort: '53572''
+2017-03-23 10:03:06 - INFO testThaliMobileNative: ''
+ok 88 Must have listeningPort
+ok 89 listeningPort must be a number
+ok 90 listening port should not be 0
+# teardown
+2017-03-23 10:03:07 - DEBUG makeIntoCloseAllServer: 'closeAll called on server'
+2017-03-23 10:03:07 - DEBUG thaliMobileNativeWrapper: 'discoveryAdvertisingStateUpdateNonTCP: {"discoveryActive":false,"advertisingActive":true}'
+2017-03-23 10:03:07 - INFO thaliMobile: 'Received state ({"discoveryActive":false,"advertisingActive":true}) did not match with target ({"started":false,"listening":false,"advertising":false,"networkType":"BOTH","startArguments":{"router":null,"pskIdToSecret":null,"networkType":null}})'
+2017-03-23 10:03:07 - INFO thaliMobile: 'Filtered out discoveryAdvertisingStateUpdate (was in stopped state).'
+ok 91 Should be able to call stopListeningForAdvertisements in teardown
+2017-03-23 10:03:07 - DEBUG thaliMobileNativeWrapper: 'discoveryAdvertisingStateUpdateNonTCP: {"discoveryActive":false,"advertisingActive":false}'
+2017-03-23 10:03:07 - INFO thaliMobile: 'Filtered out discoveryAdvertisingStateUpdate (was in stopped state).'
+ok 92 Should be able to call stopAdvertisingAndListening in teardown
+2017-03-23 10:03:07 - DEBUG thaliMobileNativeWrapper: 'Method peerAvailabilityChanged registered to native'
+2017-03-23 10:03:07 - DEBUG thaliMobileNativeWrapper: 'Method discoveryAdvertisingStateUpdateNonTCP registered to native'
+2017-03-23 10:03:07 - DEBUG thaliMobileNativeWrapper: 'Method multiConnectResolved registered to native'
+2017-03-23 10:03:07 - DEBUG thaliMobileNativeWrapper: 'networkChanged: {"cellular":"doNotCare","bssid":"70:cd:60:ff:5a:7","wifi":"on","bluetoothLowEnergy":"off","bluetooth":"off","ssid":"🐢"}'
+2017-03-23 10:03:07 - INFO thaliMobile: 'Filtered out networkChangedNonTCP (was in stopped state).'
+2017-03-23 10:03:07 - DEBUG thaliMobileNativeWrapper: 'Method networkChanged registered to native'
+2017-03-23 10:03:07 - DEBUG thaliMobileNativeWrapper: 'Method multiConnectConnectionFailure registered to native'
+2017-03-23 10:03:07 - DEBUG thaliMobileNativeWrapper: 'Method incomingConnectionToPortNumberFailed registered to native'
+# setup
+# Can shift large amounts of data
+2017-03-23 10:03:07 - DEBUG thaliMobileNativeWrapper: 'discoveryAdvertisingStateUpdateNonTCP: {"discoveryActive":false,"advertisingActive":true}'
+2017-03-23 10:03:07 - INFO thaliMobile: 'Received state ({"discoveryActive":false,"advertisingActive":true}) did not match with target ({"started":false,"listening":false,"advertising":false,"networkType":"BOTH","startArguments":{"router":null,"pskIdToSecret":null,"networkType":null}})'
+2017-03-23 10:03:07 - INFO thaliMobile: 'Filtered out discoveryAdvertisingStateUpdate (was in stopped state).'
+ok 93 Can call startUpdateAdvertisingAndListening without error
+2017-03-23 10:03:07 - DEBUG thaliMobileNativeWrapper: 'discoveryAdvertisingStateUpdateNonTCP: {"discoveryActive":true,"advertisingActive":true}'
+2017-03-23 10:03:07 - INFO thaliMobile: 'Received state ({"discoveryActive":true,"advertisingActive":true}) did not match with target ({"started":false,"listening":false,"advertising":false,"networkType":"BOTH","startArguments":{"router":null,"pskIdToSecret":null,"networkType":null}})'
+2017-03-23 10:03:07 - INFO thaliMobile: 'Filtered out discoveryAdvertisingStateUpdate (was in stopped state).'
+ok 94 Can call startListeningForAdvertisements without error
+2017-03-23 10:03:08 - DEBUG thaliMobileNativeTestUtils: 'Issuing multiConnect for E0579F36-4394-4349-840C-23A591490584 (syncValue: JAKKoSPzNPQstZfIjbTvT9X0BACElnzN)'
+2017-03-23 10:03:08 - DEBUG thaliMobileNativeTestUtils: 'Got 'multiConnect' callback'
+2017-03-23 10:03:08 - DEBUG thaliMobileNativeWrapper: 'multiConnectResolved: {"syncValue":"JAKKoSPzNPQstZfIjbTvT9X0BACElnzN","error":null,"portNumber":53572}'
+2017-03-23 10:03:08 - DEBUG thaliMobileNativeTestUtils: 'Got multiConnectResolved -syncValue: 'JAKKoSPzNPQstZfIjbTvT9X0BACElnzN', error: 'null', listeningPort: '53572''
+2017-03-23 10:03:08 - INFO testThaliMobileNative: 'Connection info: {"listeningPort":53572}'
+2017-03-23 10:03:08 - INFO testThaliMobileNative: 'Connected to the 53572'
+2017-03-23 10:06:07 - DEBUG CoordinatedClient: 'all tests completed'
+2017-03-23 10:06:07 - DEBUG CoordinatedClient: 'test client disconnected'
+2017-03-23 10:06:07 - DEBUG CoordinatedClient: 'test client failed'
+2017-03-23 10:06:07 - ERROR CoordinatedThaliTape: 'tests failed, error: 'Error: TimeoutError: timeout exceeded, event: 'run_Can shift large amounts of data_finished', test: 'Can shift large amounts of data'', stack: 'CoordinatedClient.prototype._customError@/private/var/containers/Bundle/Application/69D99F8C-5291-4A99-8A5C-CBB2DB1037C1/ThaliTest.app/www/jxcore/lib/CoordinatedClient.js:291:27
+Emitter.prototype.emit@/private/var/containers/Bundle/Application/69D99F8C-5291-4A99-8A5C-CBB2DB1037C1/ThaliTest.app/www/jxcore/node_modules/component-emitter/index.js:131:7
+Socket.prototype.onevent@/private/var/containers/Bundle/Application/69D99F8C-5291-4A99-8A5C-CBB2DB1037C1/ThaliTest.app/www/jxcore/node_modules/socket.io-client/lib/socket.js:263:5
+Socket.prototype.onpacket@/private/var/containers/Bundle/Application/69D99F8C-5291-4A99-8A5C-CBB2DB1037C1/ThaliTest.app/www/jxcore/node_modules/socket.io-client/lib/socket.js:221:7
+module.exports/<@/private/var/containers/Bundle/Application/69D99F8C-5291-4A99-8A5C-CBB2DB1037C1/ThaliTest.app/www/jxcore/node_modules/component-bind/index.js:21:12
+Emitter.prototype.emit@/private/var/containers/Bundle/Application/69D99F8C-5291-4A99-8A5C-CBB2DB1037C1/ThaliTest.app/www/jxcore/node_modules/component-emitter/index.js:131:7''
+2017-03-23 10:06:07 - DEBUG CoordinatedThaliTape: '****TEST_LOGGER:[PROCESS_ON_EXIT_FAILED]****'
+2017-03-23 10:06:07 - ERROR runTests: 'TimeoutError: timeout exceeded, event: 'run_Can shift large amounts of data_finished', test: 'Can shift large amounts of data'
+CoordinatedClient.prototype._customError@/private/var/containers/Bundle/Application/69D99F8C-5291-4A99-8A5C-CBB2DB1037C1/ThaliTest.app/www/jxcore/lib/CoordinatedClient.js:291:27
+Emitter.prototype.emit@/private/var/containers/Bundle/Application/69D99F8C-5291-4A99-8A5C-CBB2DB1037C1/ThaliTest.app/www/jxcore/node_modules/component-emitter/index.js:131:7
+Socket.prototype.onevent@/private/var/containers/Bundle/Application/69D99F8C-5291-4A99-8A5C-CBB2DB1037C1/ThaliTest.app/www/jxcore/node_modules/socket.io-client/lib/socket.js:263:5
+Socket.prototype.onpacket@/private/var/containers/Bundle/Application/69D99F8C-5291-4A99-8A5C-CBB2DB1037C1/ThaliTest.app/www/jxcore/node_modules/socket.io-client/lib/socket.js:221:7
+module.exports/<@/private/var/containers/Bundle/Application/69D99F8C-5291-4A99-8A5C-CBB2DB1037C1/ThaliTest.app/www/jxcore/node_modules/component-bind/index.js:21:12
+Emitter.prototype.emit@/private/var/containers/Bundle/Application/69D99F8C-5291-4A99-8A5C-CBB2DB1037C1/ThaliTest.app/www/jxcore/node_modules/component-emitter/index.js:131:7'
